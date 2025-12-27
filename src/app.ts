@@ -1,7 +1,9 @@
 import { publishUserCreated } from "./producer/userProducer";
 import { startUserConsumer } from "./consumer/userConsumer";
+import { startNotificationConsumer } from "./consumer/notificationConsumer";
 import { user } from "./types/user";
 startUserConsumer();
+startNotificationConsumer();
 
 
 import express, { Request, Response } from "express";
